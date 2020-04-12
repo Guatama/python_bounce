@@ -26,7 +26,7 @@ def main():
     ball = Ball(canvas, paddle, score, 'red')
 
     while not ball.hit_bottom:
-        if paddle.started == True:
+        if paddle.started:
             ball.draw()
             paddle.draw()
 
